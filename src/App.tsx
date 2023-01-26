@@ -35,7 +35,7 @@ function App() {
         <div className='w-full h-full flex flex-col content-between' ref={homeRef}>
             <div className='flex flex-row justify-between font-inter text-2xl text-amber-50  text-center mt-2  font-sans font-light'>
                 <div className='flex justify-center content-center hover:text-underline-offset-1'>
-                    <img src={github} className='h-8 mx-2 ' alt='github' /> <a href='https://www.baidu.com' className='hover:text-emerald-200'>GitHub</a>
+                    <img src={github} className='h-8 mx-2 ' alt='github' /> <a href='https://github.com/Taoaozw' className='hover:text-emerald-200'>GitHub</a>
                 </div>
                 <div className='hover:text-emerald-200 '>Blogs</div>
                 <div className='hover:text-emerald-200 '>Archives</div>
