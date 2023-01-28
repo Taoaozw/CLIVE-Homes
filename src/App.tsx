@@ -32,15 +32,17 @@ function App() {
         }
     }, [vantaEffect])
     return (
-        <div className='w-full h-full flex flex-col content-between' ref={homeRef}>
-            <div className='flex flex-row justify-between font-inter text-2xl text-amber-50  text-center mt-2  font-sans font-light'>
+        <div className='w-full h-full flex flex-col content-between ' ref={homeRef}>
+            <div className='flex flex-row justify-between font-inter text-base text-amber-50  text-center py-5  font-sans font-bold '>
                 <div className='flex justify-center content-center hover:text-underline-offset-1'>
-                    <img src={github} className='h-8 mx-2 ' alt='github' /> <a href='https://github.com/Taoaozw' className='hover:text-emerald-200'>GitHub</a>
+                    <img src={github} className='h-6 mx-3 ' alt='github' /> <a href='https://github.com/Taoaozw' className='hover:text-emerald-200'>GitHub</a>
                 </div>
-                <div className='hover:text-emerald-200 '>Blogs</div>
-                <div className='hover:text-emerald-200 '>Archives</div>
-                <div className='hover:text-emerald-200 '>Search</div>
-                <div className='mr-2 hover:text-emerald-200'>Contact</div>
+                <div className='flex flex-row space-x-32 max-sm:space-x-8'>
+                    <div className='hover:text-emerald-200 '>Blogs</div>
+                    <div className='hover:text-emerald-200 '>Topics</div>
+                    <div className='hover:text-emerald-200 '>Search</div>
+                </div>
+               <div className='mr-3 hover:text-emerald-200'>Contact</div>
             </div>
             <div
                 className='grow flex flex-col flex-wrap justify-center content-start max-sm:content-center ml-20 max-sm:ml-0 max-sm:text-center'>
