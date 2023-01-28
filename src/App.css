@@ -3,3 +3,18 @@
     width: var(--root-height);
 }
 
+.Flag1 {
+    background: linear-gradient(90deg, rgba(193, 79, 134, 0.76) 0.28%, rgba(87, 60, 165, 0.76) 95.26%)
+}
+
+.Flag3 {
+    background: linear-gradient(90deg, rgba(45, 185, 101, 0.76) 0.28%, rgba(42, 94, 117, 0.76) 42.94%, rgba(40, 26, 130, 0.76) 95.78%);
+}
+
+.Flag2 {
+    background: linear-gradient(90deg, rgba(213, 221, 121, 0.76) -0.03%, rgba(214, 124, 124, 0.76) 43.28%, rgba(216, 43, 126, 0.76) 99.5%, rgba(216, 43, 126, 0.76) 99.5%);
+}
+
+.vanta-canvas {
+    position: fixed !important;
+}
