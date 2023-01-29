@@ -22,3 +22,16 @@ body {
     margin: 0;
     padding: 0;
 }
+@layer base {
+    h1 {
+        @apply text-5xl;
+    }
+    h2 {
+        @apply text-3xl;
+    }
+    h3 {
+        @apply text-lg;
+    }
+}
+
+

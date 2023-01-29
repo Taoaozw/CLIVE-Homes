@@ -4,6 +4,7 @@ import App from './App'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Blogs from '@/components/Blogs'
+import Blog from '@/components/Blog'
 
 
 const router = createBrowserRouter([
@@ -13,6 +14,9 @@ const router = createBrowserRouter([
     }, {
         path: '/blogs',
         element: <Blogs />
+    }, {
+        path: '/blogs/1',
+        element: <Blog />
     }
 ])
 
