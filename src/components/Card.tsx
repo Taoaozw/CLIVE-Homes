@@ -1,9 +1,12 @@
-export default function Card() {
+export interface BlogsData {
+    pd?: number[]
+}
 
+export default function Card(bd: BlogsData) {
     return <>
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(i =>
+        {bd.pd?.map(i =>
             <div
-                className='w-72 h-80 bg-amber-50 bg-opacity-20 border border-solid border-clive rounded-2xl flex flex-col justify-start box-border mb-12'
+                className='w-72 h-80 bg-amber-50 bg-opacity-20 border border-solid border-clive rounded-2xl flex flex-col justify-start box-border mb-12 mr-6 grow '
                 key={i}>
                 <div className='my-6 mx-8 h-full flex flex-col space-y-4'>
                     <a
