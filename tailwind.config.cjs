@@ -8,6 +8,9 @@ module.exports = {
             // },
             colors: {
                 'clive': '#BA9E84'
+            },
+            gridTemplateColumns: {
+                'auto': ' repeat(auto-fit, minmax(288px, 1fr))'
             }
         }
     },

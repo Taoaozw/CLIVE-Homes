@@ -141,7 +141,7 @@ function Blogs() {
                     Recent Posts
                 </div>
                 <div className='content  grow  pt-10 pl-72 pr-72'>
-                    <div className=' flex flex-row justify-start flex-wrap '>
+                    <div className=' grid grid-cols-auto gap-x-4'>
                         <Card pd={data?.map(o => o.id)} />
                     </div>
                 </div>
