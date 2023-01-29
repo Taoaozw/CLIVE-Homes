@@ -1,14 +1,15 @@
 export default function Card() {
+
     return <>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(i =>
             <div
                 className='w-72 h-80 bg-amber-50 bg-opacity-20 border border-solid border-clive rounded-2xl flex flex-col justify-start box-border mb-12'
                 key={i}>
                 <div className='my-6 mx-8 h-full flex flex-col space-y-4'>
-                    <div
-                        className='font-sans text-transparent font-medium text-xl bg-clip-text bg-gradient-to-b from-[rgba(208,244,218,1)] to-[rgba(37,219,164,1)]'>
+                    <a
+                        className='font-sans text-transparent font-medium text-xl bg-clip-text bg-gradient-to-b from-[rgba(208,244,218,1)] to-[rgba(37,219,164,1)] hover:text-2xl'>
                         The Ultimate Guide to Bookstagram for Beginners
-                    </div>
+                    </a>
                     <div className='font-inter text-amber-50 text-sm'>
                         October 24.2020
                     </div>
