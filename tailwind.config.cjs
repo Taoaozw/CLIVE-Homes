@@ -45,6 +45,9 @@ module.exports = {
                         'ul li::marker': {
                             color: '#ffffff'
                         },
+                        'blockquote': {
+                            backgroundColor: 'rgba(225,178,241,0.44)'
+                        },
                         [
                             [
                                 'hr',

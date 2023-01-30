@@ -6,6 +6,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import ReactMarkdown from 'react-markdown'
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import remarkGfm from 'remark-gfm'
+import { content } from '@/model/blogs'
 
 export default function Blog() {
     const [vantaEffect, setVantaEffect] = useState<any>(null)
@@ -39,36 +40,6 @@ export default function Blog() {
     useEffect(() => {
         playground('.language-kotlin')
     })
-    const markdown = `
-## 这是你好的啊222
-# dd
-## 这是你好的啊123
-### 3jimul  
-   
- A paragraph with *emphasis* and **strong importance**.
-
-> A block quote with ~strikethrough~ and a URL: https://reactjs.org.
-
-* Lists
-* [ ] todo
-* [x] done
-
-A table:
-
-| a | b |
-| - | - |
-| 1 | 2 |
-\`\`\`javascript 
-    const x = 12
-\`\`\`    
-
-\`\`\`kotlin
-    fun main() {
-        println("Hello World")
-    }
-\`\`\`      
-`
-
     return (
         <>
             <div className='w-full h-full flex flex-col' ref={homeRef}>
@@ -93,8 +64,8 @@ A table:
                     <div className={'mt-10 text-amber-50 font-sans text-xl '}>
                         <article className='prose'>
                             <ReactMarkdown
-                                children={markdown}
-                                remarkPlugins={[remarkGfm]}
+                                children={content}
+                                remarkPlugins={[[remarkGfm]]}
                                 components={{
                                     code({ node, inline, className, children, ...props }) {
                                         console.log(typeof props)
