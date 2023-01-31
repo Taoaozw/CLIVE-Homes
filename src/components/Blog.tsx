@@ -10,16 +10,17 @@ import Background from './Background'
 export default function Blog() {
     useEffect(() => {
         playground('.language-kotlin')
-    })
+    }, [])
+
     return (
         <>
-            <Background >
+            <Background>
                 <div
                     className='mt-12 text-amber-50 font-sans text-4xl text-center text-transparent bg-clip-text bg-gradient-to-b from-[rgba(208,244,218,1)] to-[rgba(37,219,164,1)]'>
                     The Ultimate Guide to Bookstagram for Beginners
                 </div>
                 <div className='flex justify-center content-center'>
-                    <div className={'mt-10 text-amber-50 font-sans text-xl '}>
+                    <div className={'mt-10 text-amber-50 font-sans text-xl max-sm:px-12'}>
                         <article className='prose'>
                             <ReactMarkdown
                                 children={content}

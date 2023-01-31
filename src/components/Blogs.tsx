@@ -25,7 +25,7 @@ function Blogs() {
         idKey: 'id', // 项数据唯一标识的key，没有删除场景的不需要传
         autoRun: true, // 是否自动执行请求
         params: { queryId: value }, // 动态参数
-        pageSize: 10
+        pageSize: 6
     })
 
 
@@ -81,10 +81,10 @@ function Blogs() {
     return (
         <>
             <Background>
-                <div className='text-amber-50 text-6xl font-inter text-center mt-10 h-32'>
+                <div className='text-amber-50 text-6xl font-inter text-center mt-12 h-32 max-sm:text-4xl max-sm:mt-6'>
                     Recent Posts
                 </div>
-                <div className='content  grow  pt-10 pl-72 pr-72'>
+                <div className='content  grow  pt-24 pl-72 pr-72 max-sm:pl-16 max-sm:pr-0 max-sm:pt-12'>
                     <div className=' grid grid-cols-auto gap-x-4'>
                         <Card pd={data?.map(o => o.id)} />
                     </div>

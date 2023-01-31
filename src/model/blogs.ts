@@ -13,18 +13,12 @@ export interface Blog {
 
 export type Blogs = Blog[]
 
-export const mockBlogs: Blogs = new Array(10).fill(
-    {
-        name: 'blog1',
-        timeStamps: '2020-01-01',
-        flags: ['flag1', 'flag2'],
-        content: 'content1'
-    }
-)
+
 
 
 export const content = `
-## 这是你好的啊222
+## 这是你好的啊22233
+## 2
 # dd
 ## 这是你好的啊123
 ### 3jimul  
